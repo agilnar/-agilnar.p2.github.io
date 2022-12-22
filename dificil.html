@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Memory Training</title>
+  </head>
+  <body>
+    <main>
+      <section class="section1">
+        <h1>The Memory Training</h1>
+        <a href="index.html">Volver a niveles</a>
+        <input
+          type="button"
+          onclick="alert('Instrucciones del juego: Contamos con 16 tarjetas,'+
+            ' tienes que destapar una tarjeta y posteriormente la del mismo valor. Por lo tanto el objetivo'+
+            ' del juego de mesa The Memory Training es conseguir el mayor número de parejas iguales en el tiempo'+
+            ' fijado para ganar la partida')"
+          value="Instrucciones"
+        />
+        <input
+          type="button"
+          value="Jugar de nuevo"
+          onclick="location.reload()"
+        />
+        <table>
+          <tr>
+            <td><button id="0" onclick="descubrir(0)"></button></td>
+            <td><button id="1" onclick="descubrir(1)"></button></td>
+            <td><button id="2" onclick="descubrir(2)"></button></td>
+            <td><button id="3" onclick="descubrir(3)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="4" onclick="descubrir(4)"></button></td>
+            <td><button id="5" onclick="descubrir(5)"></button></td>
+            <td><button id="6" onclick="descubrir(6)"></button></td>
+            <td><button id="7" onclick="descubrir(7)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="8" onclick="descubrir(8)"></button></td>
+            <td><button id="9" onclick="descubrir(9)"></button></td>
+            <td><button id="10" onclick="descubrir(10)"></button></td>
+            <td><button id="11" onclick="descubrir(11)"></button></td>
+          </tr>
+          <tr>
+            <td><button id="12" onclick="descubrir(12)"></button></td>
+            <td><button id="13" onclick="descubrir(13)"></button></td>
+            <td><button id="14" onclick="descubrir(14)"></button></td>
+            <td><button id="15" onclick="descubrir(15)"></button></td>
+          </tr>
+        </table>
+        <h2 id="aciertos" class="puntuaciones">Aciertos: 0</h2>
+        <h2 id="time" class="puntuaciones">Tiempo: 30 segundos</h2>
+        <h2 id="jugadas" class="puntuaciones">Jugadas: 0</h2>
+        <p class="texto">Juego programado por Alejandro Gil</p>
+      </section>
+    </main>
+    <script src="scriptD.js"></script>
+  </body>
+</html>
